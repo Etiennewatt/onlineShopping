@@ -1,0 +1,1 @@
+export {default as Panier} from "./Panier"
