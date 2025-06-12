@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 23, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/middleware.ts"],"sourcesContent":["import { createI18nMiddleware } from 'next-international/middleware'\nimport { NextRequest } from 'next/server'\n \nconst I18nMiddleware = createI18nMiddleware({\n  locales: ['en', 'fr'],\n  defaultLocale: 'fr',\n  urlMappingStrategy: 'redirect' // or 'rewrite' or 'redirect'\n  // urlMappingStrategy: 'rewriteDefault' // or 'rewrite' or 'redirect'\n})\n \nexport function middleware(request: NextRequest) {\n  return I18nMiddleware(request)\n}\n \nexport const config = {\n  matcher: ['/((?!api|static|.*\\\\..*|_next|favicon.ico|robots.txt).*)']\n}"],"names":[],"mappings":";;;;AAAA;;AAGA,MAAM,iBAAiB,CAAA,GAAA,mLAAA,CAAA,uBAAoB,AAAD,EAAE;IAC1C,SAAS;QAAC;QAAM;KAAK;IACrB,eAAe;IACf,oBAAoB,WAAW,6BAA6B;AAE9D;AAEO,SAAS,WAAW,OAAoB;IAC7C,OAAO,eAAe;AACxB;AAEO,MAAM,SAAS;IACpB,SAAS;QAAC;KAA2D;AACvE"}},
+    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
